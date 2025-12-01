@@ -133,6 +133,7 @@ JWT_SECRET=yourStrongSecretKeyHere
 # Backend Setup
 
 cd continuum-api
+
 npm install
 
 # Frontend Setup
