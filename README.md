@@ -34,7 +34,7 @@ Notes-app/
     ├── src/auth        # Handles localStorage + user helpers
     └── package.json
 
-#Floew
+#Flow
 
 Frontend sends login/signup requests → /api/auth
 
