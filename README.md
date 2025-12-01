@@ -61,26 +61,28 @@ cd Notes-app
 **Install MongoDB Community Edition**
 
 Run:-
-brew tap mongodb/brew
-brew install mongodb-community@7.0
+
+    brew tap mongodb/brew
+    brew install mongodb-community@7.0
 
 **Start MongoDB Service**
 
-brew services start mongodb-community@7.0
+    brew services start mongodb-community@7.0
 
 **Verify MongoDB is running**
 
-brew services list
+    brew services list
 
 **Open Mongo Shell**
 
-mongosh
+    mongosh
+    
 You should see:
-test>
+    test>
 
 **Switch to your database:-**
 
-use continuum
+    use continuum
 
 # PART 2 — Insert Admin Users in MongoDB
 
@@ -91,12 +93,12 @@ Your admin password: Admin@123
 **Run this inside Node REPL and Generate bcrypt hash**
 
 In terminal:
-node
+    node
 
 **Inside the Node shell:**
 
-const bcrypt = require("bcryptjs");
-bcrypt.hash("Admin@123", 10).then(h => console.log(h));
+    const bcrypt = require("bcryptjs");
+    bcrypt.hash("Admin@123", 10).then(h => console.log(h));
 
 **It prints something like:**
 
@@ -104,23 +106,24 @@ $2b$10$-------5gLfKvWXwkSPIfGLy
 
 **Insert Admin 1 in MongoDB**
 Back in mongosh:
-use continuum
+
+    use continuum
 
 #Then insert:
-db.users.insertOne({
-  name: "Admin One",
-  email: "admin1@gmail.com",
-  passwordHash: "$2b$10$E-------5gLfKvWXwkSPIfGLy",
-  role: "admin"
-})
+    db.users.insertOne({
+      name: "Admin One",
+      email: "admin1@gmail.com",
+      passwordHash: "$2b$10$E-------5gLfKvWXwkSPIfGLy",
+      role: "admin"
+    })
 
 **Should return:**
-acknowledged: true
+    acknowledged: true
 
 **Do the same for admin2**
 
 **Verify both admins were created**
-db.users.find().pretty()
+    db.users.find().pretty()
 
 **Create .env:**
 
@@ -132,19 +135,19 @@ JWT_SECRET=yourStrongSecretKeyHere
 
 # Backend Setup
 
-cd continuum-api
-
-npm install
+    cd continuum-api
+    
+    npm install
 
 # Frontend Setup
 
 **In another terminal run:**
 
-cd continuum-notes
-
-npm install
-
-npm start
+    cd continuum-notes
+    
+    npm install
+    
+    npm start
 
 **If using MongoDB Compass, ensure it runs on:**
 mongodb://127.0.0.1:27017/continuum
@@ -166,11 +169,11 @@ MONGO_URI=local
 
 **Run backend:**
 
-npm run dev
+    npm run dev
 
-Start frontend:
+**Start frontend:**
 
-npm start
+    npm start
 
 **Frontend runs at:**
 
@@ -227,7 +230,7 @@ Backend kept minimal for clarity and extensibility.
 
 # Deployed Link
 
-https://notes-app-tii2.onrender.com/login
+    https://notes-app-tii2.onrender.com/login
 
 
 
