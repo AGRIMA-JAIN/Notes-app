@@ -1,0 +1,70 @@
+/* Logout small button on top-right */
+.logout-top-btn {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #4b1f1f;
+}
+
+/* Dark overlay */
+.logout-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup box */
+.logout-modal {
+  width: 260px;
+  background: #ffffffcc;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+/* Text */
+.logout-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c0f0f;
+  margin-bottom: 16px;
+}
+
+/* Buttons container */
+.logout-btn-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+/* Yes */
+.logout-yes {
+  flex: 1;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* No */
+.logout-no {
+  flex: 1;
+  padding: 10px;
+  background: #e57373;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}

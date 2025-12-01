@@ -1,0 +1,27 @@
+.admin-wrapper {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background: #fcefe7;
+  border-radius: 20px;
+}
+
+.admin-note-card {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.admin-back-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: none;
+  background: #5a2a27;
+  color: white;
+  cursor: pointer;
+}
