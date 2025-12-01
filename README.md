@@ -188,7 +188,7 @@ Password:- password
 
 # Technologies Used
 
-**Frontend**
+# Frontend
 
 React (Hooks, Router)
 
