@@ -159,7 +159,7 @@ export default function Login({ onAuthSuccess }) {
           <div className="auth-logo-inner" />
         </div>
 
-        <div className="auth-title">EVENTRA</div>
+        <div className="auth-title">Continuum Notes</div>
 
         <form onSubmit={handleLogin}>
           <div>
